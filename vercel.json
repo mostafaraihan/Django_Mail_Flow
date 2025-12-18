@@ -1,13 +1,11 @@
 {
-  "version": 12,
   "builds": [
     {
-      "src": "manage.py",
-      "use": "@vercel/python",
-      "config": { "maxLambdaSize": "50mb" }
+      "src": "api/manage.py",
+      "use": "@vercel/python"
     }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "manage.py" }
+    { "src": "/(.*)", "dest": "api/manage.py" }
   ]
 }
