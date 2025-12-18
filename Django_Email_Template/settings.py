@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-%5tjj(y*o=!^5tlp6j3ivbwhm^s+#i*ht&@#hnq2s!2gqduk)*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', 'localhost']
+ALLOWED_HOSTS = ['raihan-emailsend.vercel.app', 'localhost']
 
 
 # Application definition

@@ -1,11 +1,12 @@
 {
   "builds": [
     {
-      "src": "manage.py",
-      "use": "@vercel/python"
+      "src": "Django_Email_Template/wsgi.py",
+      "use": "@vercel/python",
+      "config": { "runtime": "python3.12", "maxLambdaSize": "15mb" }
     }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "manage.py" }
+    { "src": "/(.*)", "dest": "Django_Email_Template/wsgi.py" }
   ]
 }
